@@ -18,7 +18,10 @@ class SplashScreen : AppCompatActivity() {
 
     override fun onResume() {
         super.onResume()
-        Handler(Looper.getMainLooper()).postDelayed(runnable, 2000) // This will display splash screen for real loading time + 2 seconds
+        Handler(Looper.getMainLooper()).postDelayed(
+            runnable,
+            2000
+        ) // This will display splash screen for real loading time + 2 seconds
     }
 
     override fun onPause() {
